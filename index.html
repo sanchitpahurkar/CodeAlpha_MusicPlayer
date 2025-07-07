@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="music-player">
+        <div class="player-header">
+            <h1>Music Player</h1>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+        
+        <div class="album-art">
+            <img src="https://via.placeholder.com/300"  class="art-image">
+            <div class="vinyl-record">
+                <div class="vinyl"></div>
+            </div>
+        </div>
+        
+        <div class="song-info">
+            <h2 class="song-title">Song Title</h2>
+            <p class="artist-name">Artist Name</p>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress"></div>
+                <div class="progress-handle"></div>
+            </div>
+            <div class="time-info">
+                <span class="current-time">0:00</span>
+                <span class="duration">0:00</span>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="control-btn shuffle-btn" title="Shuffle">
+                <i class="fas fa-random"></i>
+            </button>
+            <button class="control-btn prev-btn" title="Previous">
+                <i class="fas fa-step-backward"></i>
+            </button>
+            <button class="control-btn play-btn" title="Play">
+                <i class="fas fa-play"></i>
+            </button>
+            <button class="control-btn next-btn" title="Next">
+                <i class="fas fa-step-forward"></i>
+            </button>
+            <button class="control-btn repeat-btn" title="Repeat">
+                <i class="fas fa-redo"></i>
+            </button>
+        </div>
+        
+        <div class="volume-control">
+            <i class="fas fa-volume-up volume-icon"></i>
+            <div class="volume-bar">
+                <div class="volume-level"></div>
+                <div class="volume-handle"></div>
+            </div>
+        </div>
+        
+        <div class="playlist-container">
+            <h3>Playlist</h3>
+            <ul class="playlist">
+                <!-- Songs will be added dynamically -->
+            </ul>
+        </div>
+    </div>
+
+    <audio id="audio"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
